@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+{% load static %}
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link href="{% static 'index.css' %}">
+
+</head>
+<body>
+    {% for product in products %}
+    <br>
+        {{product.title}}
+        {{product.price}}
+    <br>
+    {% endfor %}
+</body>
+</html>
